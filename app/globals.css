@@ -8,8 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-montserrat: var(--font-montserrat);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +21,84 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom pistachio colors - ensuring they work with Tailwind */
+.bg-pistachio {
+  background-color: #b8bf55;
+}
+
+.bg-pistachio-light {
+  background-color: #e3e89c;
+}
+
+.bg-pistachio-dark {
+  background-color: #7a7f2a;
+}
+
+.bg-pistachio-dark-light {
+  background-color: #bfd139;
+}
+
+.text-pistachio {
+  color: #b8bf55;
+}
+
+.text-pistachio-light {
+  color: #e3e89c;
+}
+
+.text-pistachio-dark {
+  color: #7a7f2a;
+}
+
+.border-pistachio {
+  border-color: #b8bf55;
+}
+
+.border-pistachio-light {
+  border-color: #e3e89c;
+}
+
+.border-pistachio-dark {
+  border-color: #7a7f2a;
+}
+
+.hover\:bg-pistachio:hover {
+  background-color: #b8bf55;
+}
+
+.hover\:bg-pistachio-light:hover {
+  background-color: #e3e89c;
+}
+
+.hover\:text-pistachio-dark:hover {
+  color: #7a7f2a;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.focus\:ring-pistachio-dark:focus {
+  --tw-ring-color: #7a7f2a;
+}
+
+.from-pistachio-light {
+  --tw-gradient-from: #e3e89c;
+  --tw-gradient-to: rgb(227 232 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-white {
+  --tw-gradient-to: rgb(255 255 255);
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
